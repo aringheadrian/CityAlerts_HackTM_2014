@@ -31,7 +31,7 @@
   data-show-faces="true">
 </div>
 
-<?php echo rand(); ?>
+
 <ul>
 <li> a </li>
 <li> b </li>
