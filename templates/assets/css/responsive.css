@@ -1,0 +1,168 @@
+/*------------------------------------------*/
+/*	Smaller than 980px						*/	
+/*------------------------------------------*/
+@media screen and (max-width: 980px) {
+/*	LAYOUT */	
+	.wrapper, .wrap 	{width:90%;}
+
+/*	HEADER */
+	.logo 		 {width:100%; margin:0 0 15px 0;}
+	.logo img	 {margin:0 auto;}
+	
+	.headerAnime {clear:both; float:none; margin:0 auto;}
+
+	.nav-toggler	{display:block;}
+		.toggler	{margin-top:8px;}
+	.mainNav 			{display:none; margin:15px 0; overflow:hidden;}
+	.mainNav li			{width:100%; margin:0;}
+	.mainNav li > a	i	{width:25px;}
+	/* Submenu */
+	.mainNav > li > ul		{position:static; top:auto; left:auto; padding:0 0 0 15px;}
+	.mainNav > li > ul li	{float:none; width:100%;}
+	
+	
+/*	CONTAINER */
+	.stickyBlock 						{margin:15px auto 8px auto;}
+	.stickyBlock article 				{width:100%; padding-bottom:15px; margin:0 0 15px 0; text-align:left; border-bottom:1px dotted #DEDEDE;}
+	.stickyBlock article:last-of-type	{margin-bottom:0; padding-bottom:0; border-bottom:0 none;}
+	.stickyBlock article > figure		{float:left; width:42%;}
+	.stickyBlock article > footer		{float:right; opacity:1; position:static; width:56%; height:auto; padding:0;}
+	.stickyBlock h3						{display:inline;}
+	.stickyBlock p						{text-align:justify;}
+	.stickyBlock figcaption 			{left:5px; right:auto;}
+	
+	.content, .sidebar 	{width:100%;}
+	
+		.articles > * > a,
+		.articles > * > span {width:28%;}
+		.articles > * > div			{width:72%;}
+		
+		.articles.widgetArticles header > p {display:block;}
+
+}
+	
+
+/*------------------------------------------*/
+/*	Smaller than 650px						*/	
+/*------------------------------------------*/
+@media screen and (max-width: 650px) {
+/*	HEADER */
+	.headerAnime 		{width:100%; height:auto; background:none;}
+		.contactBone 	{position:relative; top:0; margin:0 auto;}
+		
+	.logo {margin-top:15px;}
+	
+/*	CONTAINER */
+	.flexslider .flex-caption {display:none;}
+	
+	.articles > *		{display:block; text-align:center;}
+	.articles > * > a,
+	.articles > * > span,
+	.articles > * > div	{display:block; float:left; width:100%;}
+	.articles > * > div	{padding-left:0;}
+	.articles > * > a,
+	.articles > * > span {margin-bottom:15px;}
+	.articles figure	{display:inline-block;}
+	
+		.articles.smallArticles > *	{text-align:left;}
+		.articles.smallArticles > * > a,
+		.articles.smallArticles > * > div	{display:table-cell; float:none; width:auto;}
+		.articles.smallArticles > * > a		{width:90px;}
+		
+	.albums article {width:100%;}
+	
+	.buyList article > header > h3			{font-size:1em;}
+		.details > li > label,
+		.details > li > div					{padding:5px;}
+			.buttons > * 					{width:100%;}
+	.buyList.buyWide .details > li > label	{width:120px;}
+	.buyList.buyWide .details > li > label,
+	.buyList.buyWide .details > li > div 	{padding:10px;}
+
+	.formBuy 			{width:390px;}
+	form.formBuy input	{width:44%;}
+	
+	
+/* Breadcrumb Navigation */
+	.breadcrumbNav li 					{display:block; margin:0 0 5px 0; text-align:center;}
+	.breadcrumbNav li:after 			{content:"\2193"; display:block; padding:5px 0 0 0;}
+	.breadcrumbNav li:last-child 		{margin:0; color:#ff0056;}
+	.breadcrumbNav li:last-child:after 	{content:""; padding:0;}	
+	
+/* FOOTER */
+
+}
+
+
+/*------------------------------------------*/
+/*	Smaller than 480px						*/	
+/*------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {-webkit-text-size-adjust:none;}
+	
+/*	LAYOUT */	
+	.wrapper, .wrap 	{width:85%;}
+	
+/*	HEADER */
+
+
+/*	CONTAINER */
+	.stickyBlock article 				{width:100%; margin:0 0 25px 0; text-align:center;}
+	.stickyBlock article:last-of-type	{margin-bottom:0;}
+	.stickyBlock article > figure,
+	.stickyBlock article > footer		{float:left; width:100%;}	
+	.stickyBlock h3						{display:block;}
+	.stickyBlock p						{text-align:justify;}
+	.stickyBlock figcaption 			{left:auto; right:5px;}
+
+	.articles.smallArticles header > p,
+	.articles.widgetArticles header > p 	{display:none;}
+	
+	.thumbsList article {width:100%;}
+	
+	.albums article > figure > * 	{width:100%; height:150px;}
+	.wideAlbums > figure > * 		{min-height:200px;}
+	
+	.buyList article 					{width:100%;}
+	.buyList article > header > h3		{font-size:1.13em;}
+		.buyList .details > li > label,
+		.buyList .details > li > div 	{padding:5px 15px;}
+			.buyList .buttons > * 		{width:50%;}
+	.buyList.buyWide .details 					{margin-top:15px;}
+	.buyList.buyWide .details > li 				{background:transparent; border:0 none; border-bottom:1px dotted #dedede; margin-bottom:10px; padding-bottom:10px;}
+	.buyList.buyWide .details > li:last-child	{border-bottom:0 none; padding-bottom:0;}
+	.buyList.buyWide .details > li > label,
+	.buyList.buyWide .details > li > div		{display:block; width:100%; padding:0; border:0 none; text-align:center;}
+	.buyList.buyWide .details > li > label		{font-weight:700; margin-bottom:10px; text-transform:uppercase;}
+	.buyList.buyWide .buttons > * 				{width:100%; margin-top:5px;}
+	
+	.formBuy 			{width:250px; margin:0 auto;}
+	.dogDetails			{display:none;}
+	form.formBuy input	{width:100%;}
+
+/* Pagination */
+	.pagination li	{display:none;}
+	.pagination li:nth-of-type(-n+2),
+	.pagination li:nth-last-child(-n+2)	{display:block;}
+}
+
+/*------------------------------------------*/
+/*	Smaller than 320px						*/	
+/*------------------------------------------*/
+@media screen and (max-width: 350px) {
+/*	HEADER */
+
+	
+/*	CONTAINER */
+
+	.buyList article > header > h3			{font-size:1em;}
+		.buyList .details > li > label,
+		.buyList .details > li > p 			{padding:5px;}
+			.buyList .buttons > * 			{width:100%;}
+
+	.formBuy 		{width:200px;}
+}
+
+

@@ -1,7 +1,6 @@
 <?php
-	$HYBRIDAUTH_VERSION = "2.2.2";
-?><!DOCTYPE html>
-<html lang="en">
+	$HYBRIDAUTH_VERSION = "2.1.2";
+?><html> 
 <head>
 <title>HybridAuth Installer</title>
 <meta name="robots" content="NOINDEX, NOFOLLOW">  
@@ -81,7 +80,7 @@ ul li label {
 <?php 
 	$CONFIG_TEMPLATE                = "";
 
-	/**
+   /**
 	* Utility function, return the current url 
 	*/
 	function getCurrentUrl() 
@@ -110,31 +109,19 @@ ul li label {
 		// return current url
 		return $url;
 	}
-	
-	/**
-	 * Sanitize the inputed string to prevent XSS attacks
-	 * @param string $string
-	 * @return string
-	 */
-	function stringSanitization($string)
-	{
-		$string = strip_tags($string);
-		$string = htmlentities($string, ENT_QUOTES, 'UTF-8');
-		return $string;
-	}
 
 	$GLOBAL_HYBRID_AUTH_URL_BASE    = getCurrentUrl();
 	$GLOBAL_HYBRID_AUTH_URL_BASE    = str_ireplace( "install.php", "", $GLOBAL_HYBRID_AUTH_URL_BASE );
 	$GLOBAL_HYBRID_AUTH_PATH_BASE   = realpath( dirname( __FILE__ ) ) . "/";
 	$CONFIG_FILE_NAME               = $GLOBAL_HYBRID_AUTH_PATH_BASE . "config.php";
 
-	// default providers
+	// deault providers
 	$PROVIDERS_CONFIG      = ARRAY(
 								ARRAY( 
 									"label"             => "Facebook",
 									"provider_name"     => "Facebook", 
 									"require_client_id" => TRUE, 
-									"new_app_link"      => "https://developers.facebook.com/",
+									"new_app_link"      => "https://www.facebook.com/developers/",
 									"userguide_section" => "http://hybridauth.sourceforge.net/userguide/IDProvider_info_Facebook.html",
 								)
 								,
@@ -150,7 +137,7 @@ ul li label {
 								ARRAY( 
 									"label"             => "Twitter",
 									"provider_name"     => "Twitter",  
-									"new_app_link"      => "https://apps.twitter.com/",
+									"new_app_link"      => "https://dev.twitter.com/apps",
 									"userguide_section" => "http://hybridauth.sourceforge.net/userguide/IDProvider_info_Twitter.html",
 								)
 								,
@@ -166,8 +153,15 @@ ul li label {
 									"label"             => "Live",
 									"provider_name"     => "Windows Live", 
 									"require_client_id" => TRUE, 
-									"new_app_link"      => "https://account.live.com/developers/applications/index",
+									"new_app_link"      => "https://manage.dev.live.com/ApplicationOverview.aspx",
 									"userguide_section" => "http://hybridauth.sourceforge.net/userguide/IDProvider_info_Live.html",
+								)
+								,
+								ARRAY( 
+									"label"             => "MySpace",
+									"provider_name"     => "MySpace", 
+									"new_app_link"      => "http://www.developer.myspace.com/",
+									"userguide_section" => "http://hybridauth.sourceforge.net/userguide/IDProvider_info_MySpace.html",
 								)
 								,
 								ARRAY( 
@@ -175,7 +169,7 @@ ul li label {
 									"provider_name"     => "Foursquare", 
 									"require_client_id" => TRUE, 
 									"callback"          => TRUE,
-									"new_app_link"      => "https://foursquare.com/developers/apps",
+									"new_app_link"      => "https://www.foursquare.com/oauth/",
 									"userguide_section" => "http://hybridauth.sourceforge.net/userguide/IDProvider_info_Foursquare.html",
 								)
 								,
@@ -202,11 +196,10 @@ ul li label {
 							);
 
 	if( count( $_POST ) ):
-		$CONFIG_TEMPLATE = file_get_contents( $GLOBAL_HYBRID_AUTH_PATH_BASE . "Hybrid/resources/config.php.tpl" );
+		$CONFIG_TEMPLATE = file_get_contents( "Hybrid/resources/config.php.tpl" );
  
 		foreach( $_POST AS $k => $v ):
-			$v = stringSanitization($v);
-			$k = stringSanitization($k);
+			$v = strip_tags( $v );
 			$z = "#$k#";
 			
 			$CONFIG_TEMPLATE = str_replace( $z, $v, $CONFIG_TEMPLATE );
@@ -260,7 +253,7 @@ ul li label {
 
 <div id="content"> 
 	<?php
-		// check if php 5+. well dunno the exact version to test, because it depend on which providers will be used..
+		// check if php 5+. well donno the exact version to test, because it depend on which providers will be used..
 		if ( version_compare( PHP_VERSION, '5.2', '<=' ) ):
 	?>
 		<p style='background-color:#EE3322;color:#FFFFFF;margin:1em 0;padding:0.8em;border:1px #C52F24 solid;'><strong>Error: </strong> HybridAuth requires PHP 5.2 or higher</p>
@@ -313,7 +306,7 @@ ul li label {
 	
 	<ul style="list-style:circle inside;">
 		<li style="color: #000000;font-size: 14px;">HybridAuth endpoint url is where the index.php is located.</li>
-		<li style="color: #000000;font-size: 14px;">HybridAuth endpoint should be set to <b>+rx mode</b> (read and execute permissions)</li>
+		<li style="color: #000000;font-size: 14px;">HybridAuth enpoint should be set to <b>+rx mode</b> (read and execute permissions)</li>
 	</ul>
 	
 	<div> 
@@ -336,7 +329,7 @@ ul li label {
 
 	<ul style="list-style:circle inside;">
 		<li style="color: #000000;font-size: 14px;">To correctly setup these Identity Providers please carefully follow the help section of each one.</li>
-		<li style="color: #000000;font-size: 14px;">If <b>Provider Adapter Status</b> is set to <b style="color:red">Disabled</b> then users will not be able to login with this provider on you website.</li>
+		<li style="color: #000000;font-size: 14px;">If <b>Provider Adapter Satus</b> is set to <b style="color:red">Disabled</b> then users will not be able to login with this provider on you website.</li>
 	</ul>
 
 <?php
@@ -361,7 +354,7 @@ ul li label {
 		<div class="cfg">
 		   <div class="cgfparams">
 			  <ul>
-				 <li><label><?php echo $provider_name ?> Adapter Status</label>
+				 <li><label><?php echo $provider_name ?> Adapter Satus</label>
 					<select name="<?php echo strtoupper( $provider ) ?>_ADAPTER_STATUS">
 						<option selected="selected" value="true">Enabled</option>
 						<option value="false">Disabled</option>
@@ -393,7 +386,11 @@ ul li label {
 							<br />
 							<?php echo $provider_callback_url ?>
 						</p>
-					<?php endif; ?>
+					<?php endif; ?> 
+
+					<?php if ( $provider == "MySpace" ) : ?>
+						<p><?php echo "<b>" . ++$setupsteps . "</b>." ?> Put your website domain in the <b>External Url</b> and <b>External Callback Validation</b> fields. It should match with the current hostname <em style="color:#CB4B16;"><?php echo $_SERVER["SERVER_NAME"] ?></em>.</p>
+					<?php endif; ?> 
 
 					<?php if ( $provider == "Live" ) : ?>
 						<p><?php echo "<b>" . ++$setupsteps . "</b>." ?> Put your website domain in the <b>Redirect Domain</b> field. It should match with the current hostname <em style="color:#CB4B16;"><?php echo $_SERVER["SERVER_NAME"] ?></em>.</p>
