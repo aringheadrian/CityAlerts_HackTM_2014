@@ -1,32 +1,32 @@
 <?php
 
-// //Include the common file
+//Include the common file
 require '/../common.php';
 echo error_log();
-// //Check if the user is logged in and is admin
-// if ($authentication->loggedIn() && $authentication->isAdmin()) header("Location: index.php");
+//Check if the user is logged in and is admin
+if ($authentication->loggedIn() && $authentication->isAdmin()) header("Location: index.php");
 
-// //Check if the form has been submitted
-// if (isset($_POST['submit'])) {
+ //Check if the form has been submitted
+if (isset($_POST['submit'])) {
 
-    // $validate->email($_POST['email'], 'Email address not valid.');
-    // $validate->required($_POST['password'], 'Enter your password.');
+    $validate->email($_POST['email'], 'Email address not valid.');
+    $validate->required($_POST['password'], 'Enter your password.');
 
-    // if (!$error->hasErrors()) {
+    if (!$error->hasErrors()) {
 
-        // $remember = false;
+        $remember = false;
 
-        // if (isset($_POST['remember']))
-            // $remember = true;
+        if (isset($_POST['remember']))
+             $remember = true;
 
-        // if ($authentication->login($_POST['email'], $_POST['password'], $remember))
-            // header("Location: index.php");
-        // else
-            // $tpl->set('failed', true);
+         if ($authentication->login($_POST['email'], $_POST['password'], $remember))
+             header("Location: index.php");
+         else
+             $tpl->set('failed', true);
 
-    // }
+     }
 
-// }
+ }
 
 //Display the template
 $tpl->display('admin/login');
