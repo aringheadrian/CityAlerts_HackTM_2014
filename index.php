@@ -7,6 +7,8 @@
 <body>
 <div id="rattTest"></div>
 <?php echo rand(); ?>
+
+<img src="/cityalerts_dbase.png" alt="database img"/>
 </body>
 </html>
 
