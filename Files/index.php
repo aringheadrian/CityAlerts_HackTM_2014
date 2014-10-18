@@ -142,7 +142,7 @@
 <li style="display:none"> b </li>
 <li style="display:none"> c </li>
 <script>
-$(document).load(function(){
+$(document).ready(function(){
 $('.infinite_scroll').jscroll();
 });
 </script>
