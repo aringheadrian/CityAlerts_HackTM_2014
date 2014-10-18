@@ -99,54 +99,48 @@
 <li> a </li>
 <li> b </li>
 <li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
-<li> a </li>
-<li> b </li>
-<li> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
+<li style="display:none"> a </li>
+<li style="display:none"> b </li>
+<li style="display:none"> c </li>
 <script>
 $(document).load(function(){
 $('.infinite_scroll').jscroll();
