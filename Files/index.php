@@ -31,7 +31,11 @@
   data-show-faces="true">
 </div>
 
-
+<script>
+$(document).load(function(){
+$('li').each(function(i){if(i>40){$(this).hide()}});
+});
+</script>
 <ul>
 <li> a </li>
 <li> b </li>
