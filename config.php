@@ -21,7 +21,7 @@ return
 
 			"Yahoo" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "id" => "", "secret" => "" ),
+				"keys"    => array ( "key" => "dj0yJmk9OUE0VXNnUW9BOVVTJmQ9WVdrOWNtWTJSa05FTm0wbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD03Mg--", "secret" => "8ceb50134afee424bb8b6ff9325c2006a9f19874" ),
 			),
 
 			"AOL"  => array ( 
@@ -30,18 +30,18 @@ return
 
 			"Google" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "id" => "", "secret" => "" ), 
+				"keys"    => array ( "id" => "1098506107643-uk1ogmba8vjfea2lnlac1323r7627q7a.apps.googleusercontent.com", "secret" => "SUPUfJtSwZ8dNECR3czhFvxv" ), 
 			),
 
 			"Facebook" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "id" => "", "secret" => "" ),
+				"keys"    => array ( "id" => "794310247279052", "secret" => "adc19443139d246943760409b98f67c1" ),
 				"trustForwarded" => false
 			),
 
 			"Twitter" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "key" => "", "secret" => "" ) 
+				"keys"    => array ( "key" => "TiypcmGGDWi2bpA9aGo0tOUNL", "secret" => "Wv485Ktpbjdexato62zMRXkLiBC2u0T0GExvS8nQihlyRQw49a" ) 
 			),
 
 			// windows live
@@ -52,7 +52,7 @@ return
 
 			"LinkedIn" => array ( 
 				"enabled" => true,
-				"keys"    => array ( "key" => "", "secret" => "" ) 
+				"keys"    => array ( "key" => "8ceb50134afee424bb8b6ff9325c2006a9f198748ceb50134afee424bb8b6ff9325c2006a9f19874", "secret" => "CPpvVOEUdbNoIzWN" ) 
 			),
 
 			"Foursquare" => array (
