@@ -5,7 +5,7 @@ $db_user = 'bc19f65aa021fe';
 $db_pwd = '5dfaaa69';
 
 $database = 'alertsadmin';
-$table = 'alerts';
+$table = 'cta_alerts';
 
 if (!mysql_connect($db_host, $db_user, $db_pwd))
     die("Can't connect to database");
