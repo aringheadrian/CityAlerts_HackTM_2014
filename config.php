@@ -11,7 +11,7 @@
 
 return 
 	array(
-		"base_url" => "http://localhost/hybridauth-git/hybridauth/", 
+		"base_url" => "http://cityalerts.azurewebsites.net/hybridauth/", 
 
 		"providers" => array ( 
 			// openid providers
