@@ -1,5 +1,5 @@
 <?php 
-//if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) exit('No direct access allowed.');
+if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) exit('No direct access allowed.');
 
 /**
  * Autoloading classes

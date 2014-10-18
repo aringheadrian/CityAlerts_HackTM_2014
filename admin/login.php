@@ -1,17 +1,7 @@
 <?php
 
 //Include the common file
-//require_once "WindowsAzure/WindowsAzure.php";
-echo "nu e eroare aici !";
-//require '/../common.php';
-$tpl = new lib\Template(cfg('template', 'absolute_path'));
-
-//Template values
-$tpl->set('db', $db);
-$tpl->set('authentication', $authentication);
-$tpl->set('error', $error);
-$tpl->set('session', $session);
-
+require '/../common.php';
 
 //Check if the user is logged in and is admin
 if ($authentication->loggedIn() && $authentication->isAdmin()) header("Location: index.php");
