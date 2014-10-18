@@ -1,8 +1,8 @@
 <?php 
 	// load hybridauth base file, change the following paths if necessary 
 	// note: in your application you probably have to include these only when required.
-	$hybridauth_config = dirname(__FILE__) . '../hybridauth/config.php';
-	require_once( "../hybridauth/Hybrid/Auth.php" );
+	$hybridauth_config = dirname(__FILE__) . 'hybridauth/config.php';
+	require_once( "hybridauth/Hybrid/Auth.php" );
 
 	// database config
 	$database_host = "localhost"; 
