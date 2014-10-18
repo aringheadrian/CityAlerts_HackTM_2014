@@ -22,7 +22,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-<div id="rattTest"></div>
 
 <div
   class="fb-like"
@@ -33,6 +32,7 @@
 
 <script>
 $(document).load(function(){
+console.log("on load");
 $('li').each(function(i){if(i>40){$(this).hide()}});
 });
 </script>
