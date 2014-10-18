@@ -28,6 +28,6 @@ require '/../common.php';
 
 // }
 
-// //Display the template
-// $tpl->display('admin/login');
+//Display the template
+$tpl->display('admin/login');
 ?>
