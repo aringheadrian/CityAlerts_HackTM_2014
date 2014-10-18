@@ -2,7 +2,7 @@
 
 // //Include the common file
 require '/../common.php';
-
+echo error_log();
 // //Check if the user is logged in and is admin
 // if ($authentication->loggedIn() && $authentication->isAdmin()) header("Location: index.php");
 
