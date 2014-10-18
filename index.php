@@ -1,7 +1,13 @@
-<DOCTYPE>
+<DOCTYPE html>
 <html>
+<head>
+   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <title>City Alerts</title>
+</head>
 <body>
-TEST TEXT ! <br/>Voila !
+<div id="rattTest"></div>
 <?php echo rand(); ?>
 </body>
 </html>
+
+
