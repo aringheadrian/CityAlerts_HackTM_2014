@@ -1,6 +1,7 @@
 <?php
 
 //Include the common file
+require_once "WindowsAzure/WindowsAzure.php";
 echo "nu e eroare aici !";
 require '/../common.php';
 
