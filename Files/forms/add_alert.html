@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="http://parsleyjs.org/dist/parsley.remote.min.js"></script>
+</head>
 <body>
-<form class="form-horizontal">
+<form class="form-horizontal"  data-parsley-validate>
 <fieldset>
 
 <!-- Form Name -->
@@ -11,7 +14,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Text Input</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" data-parsley-trigger="change" required>
   <span class="help-block">help</span>  
   </div>
 </div>
@@ -20,7 +23,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="agency_name">Agency Name</label>
   <div class="col-md-4">
-    <select id="agency_name" name="agency_name" class="form-control">
+    <select id="agency_name" name="agency_name" class="form-control" required>
       <option value="1">Select</option>
       <option value="2">RATT</option>
       <option value="3">Enel</option>
@@ -36,7 +39,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="contact_details">Contact Details</label>  
   <div class="col-md-4">
-  <input id="contact_details" name="contact_details" type="text" placeholder="" class="form-control input-md">
+  <input id="contact_details" name="contact_details" type="text" placeholder="" class="form-control input-md" data-parsley-trigger="change" required>
     
   </div>
 </div>
@@ -45,7 +48,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="alert_title">Alert Title</label>  
   <div class="col-md-4">
-  <input id="alert_title" name="alert_title" type="text" placeholder="" class="form-control input-md">
+  <input id="alert_title" name="alert_title" type="text" placeholder="" class="form-control input-md" data-parsley-trigger="change" required>
     
   </div>
 </div>
@@ -54,7 +57,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="type_name">Alert Type</label>
   <div class="col-md-4">
-    <select id="type_name" name="type_name" class="form-control">
+    <select id="type_name" name="type_name" class="form-control" required>
       <option value="1">Select</option>
       <option value="2">Low</option>
       <option value="3">Medium</option>
@@ -68,7 +71,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="alert_description">Alert Description</label>  
   <div class="col-md-4">
-  <input id="alert_description" name="alert_description" type="text" placeholder="Add your description" class="form-control input-md">
+  <input id="alert_description" name="alert_description" type="text" placeholder="Add your description" class="form-control input-md" data-parsley-trigger="change" required>
     
   </div>
 </div>
@@ -85,7 +88,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="alert_city">Alert City</label>
   <div class="col-md-4">
-    <select id="alert_city" name="alert_city" class="form-control">
+    <select id="alert_city" name="alert_city" class="form-control" required>
       <option value="1">Select</option>
       <option value="2">Timisoara</option>
       <option value="3">Cluj-Napoca</option>
@@ -99,16 +102,16 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="alert_address">Street Number</label>  
+  <label class="col-md-4 control-label" for="alert_address">Street Name</label>  
   <div class="col-md-4">
-  <input id="alert_address" name="alert_address" type="text" placeholder="" class="form-control input-md">
+  <input id="alert_address" name="alert_address" type="text" placeholder="" class="form-control input-md" data-parsley-trigger="change" required>
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="alert_addressnr">Nr.</label>  
+  <label class="col-md-4 control-label" for="alert_addressnr">Street Nr.</label>  
   <div class="col-md-4">
   <input id="alert_addressnr" name="alert_addressnr" type="text" placeholder="" class="form-control input-md">
     
@@ -129,8 +132,8 @@
   <label class="col-md-4 control-label" for="alert_impact">Alert Impact</label>
   <div class="col-md-4">
   <div class="radio">
-    <label for="alert_impact-0">
-      <input type="radio" name="alert_impact" id="alert_impact-0" value="1" checked="checked">
+    <label for="alert_impact-0" >
+      <input type="radio" name="alert_impact" id="alert_impact-0" value="1" checked="checked" required>
       1
     </label>
 	</div>
